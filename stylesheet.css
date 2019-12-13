@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+body {
+    font-family: Lato;
+    font-weight: 400;
+}
+
+a, a:hover {
+  text-decoration: none;
+	color: #000;
+}
+
+
+.nav-link:hover, #current {
+  color: #000;
+}
+
+.nav-link {
+  text-decoration: none;
+	color: #878585;
+}
+
+nav ul {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.card-img {
+  -webkit-transform: translateZ(0);
+  width: calc(100% + .49px);
+}
+
+.card, .card .card-img, .card .card-img-overlay {
+  border-radius: 0;
+}
+
+.card-hover:hover .card-img {
+  opacity: .9;
+  transition: opacity 0.2s ease;
+}
+
+#name-header-div {
+  padding-left: 2em;
+}
+
+#name-header {
+  font-weight: 900px;
+  letter-spacing: 30px;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 5;
+    }
+
+}

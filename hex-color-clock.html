@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Hex Color Clock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="hex-style.css"/>
+    <script src="script.js"></script>
+</head>
+
+<body onload="startTime()">
+
+  <div class="text-center" id="background">
+
+    <div class="text-center text-white my-5">
+      <div id="timezone"></div>
+      <div id="txt"></div>
+      <div id="hex"></div>
+    </div>
+
+    <div class="container">
+
+    <div class="row justify-content-between mb-3">
+    <button class="timeZoneButton" onclick="setTimeZone('America/Los_Angeles')">Los Angeles, US</button>
+    <button class="timeZoneButton" onclick="setTimeZone('America/New_York')">New York, US</button>
+    <button class="timeZoneButton" onclick="setTimeZone('Australia/Sydney')">Sydney, AU</button>
+    <button class="timeZoneButton" onclick="setTimeZone('Asia/Tokyo')">Tokyo, JP</button>
+    </div>
+
+    <div class="row justify-content-between">
+    <button class="timeZoneButton" onclick="setTimeZone('Europe/Paris')">Paris, FR</button>
+    <button class="timeZoneButton" onclick="setTimeZone('Antarctica/South_Pole')">South Pole, AR</button>
+    <button class="timeZoneButton" onclick="setTimeZone('Africa/Accra')">Accra, GH</button>
+    <button class="timeZoneButton" onclick="setTimeZone('America/Sao_Paulo')">Sao Paulo, BR</button>
+    </div>
+
+    </div>
+
+    <button class="toggle my-5 timeZoneButton" id="mode-toggle" onclick="toggleMode()"></button>
+
+  </div>
+
+</body>
